@@ -1,0 +1,111 @@
+------------------------------------------------------------------------------------------
+Test 1: Testing For String Representations of Weapon Objects
+------------------------------------------------------------------------------------------
+Expected Value: Bloodhound's Fang [Type: Curved Greatsword | Rating %: 71.2% | Weight: 11.5 | Level: 9]
+Actual Value Matches Expected Value: True
+
+Expected Value: Nagakiba [Type: Katana | Rating %: 73.6% | Weight: 7.0 | Level: 1]
+Actual Value Matches Expected Value: True
+
+------------------------------------------------------------------------------------------
+Test 2: Testing For repr() Representations of Weapon Objects
+------------------------------------------------------------------------------------------
+Expected Value for Object 1:
+--------------------
+NAME: Bloodhound's Fang
+TYPE: Curved Greatsword
+PHYSICAL DAMAGE: 345
+MAGIC DAMAGE: 0
+FIRE DAMAGE: 0
+LIGHT DAMAGE: 0
+HOLY DAMAGE: 0
+CRITICAL DAMAGE: 100
+STAMINA DAMAGE: 122
+STRENGTH SCALING: 3.5
+DEXTERITY SCALING: 4.5
+INTELLIGENCE SCALING: 1
+FAITH SCALING: 1
+ARCANE SCALING: 1
+WEIGHT: 11.5
+UPGRADE TYPE: Somber Smithing Stones
+RATING: 71.2
+LEVEL: 9
+--------------------
+Actual Value of Object 1 Matches Expected Value Of Object 1: True
+
+Expected Value for Object 2:
+--------------------
+NAME: Nagakiba
+TYPE: Katana
+PHYSICAL DAMAGE: 281
+MAGIC DAMAGE: 0
+FIRE DAMAGE: 0
+LIGHT DAMAGE: 0
+HOLY DAMAGE: 0
+CRITICAL DAMAGE: 100
+STAMINA DAMAGE: 90
+STRENGTH SCALING: 2.5
+DEXTERITY SCALING: 4.5
+INTELLIGENCE SCALING: 1
+FAITH SCALING: 1
+ARCANE SCALING: 1
+WEIGHT: 7.0
+UPGRADE TYPE: Smithing Stones
+RATING: 73.6
+LEVEL: 1
+--------------------
+Actual Value of Object 2 Matches Expected Value Of Object 2: True
+
+------------------------------------------------------------------------------------------
+Test 3: Testing For (In)Equality Between Objects
+------------------------------------------------------------------------------------------
+Object 1 is not equal to Object 2 (Using "=="): True
+
+Object 1 is not equal to Object 2 (Using "!="): True
+
+------------------------------------------------------------------------------------------
+Test 4: Testing For Comparisons Between Objects
+------------------------------------------------------------------------------------------
+Object 1's value is lesser than Object 2's value (Testing '<'): True
+
+Object 2's value is greater than Object 1's value (Testing '>'): True
+
+------------------------------------------------------------------------------------------
+Test 5: Testing for Weapon .value() Result
+------------------------------------------------------------------------------------------
+Object 1's value is equal to 71.2: True
+
+Object 2's value is equal to 73.6: True
+
+Object 1's value is lesser than 72: True
+
+Object 1's value is greater than 73: True
+
+------------------------------------------------------------------------------------------
+Test 6: Testing For Object Addition
+------------------------------------------------------------------------------------------
+Object 1 + Object 2 is equal to 144.80959821235305: True
+
+------------------------------------------------------------------------------------------
+Test 7: Testing For Object Subtraction
+------------------------------------------------------------------------------------------
+Object 1 - Object 2 is equal to -2.4: True
+
+Object 2 - Object 1 is equal to 2.4: True
+
+------------------------------------------------------------------------------------------
+Test 8: Testing For Object Multiplication
+------------------------------------------------------------------------------------------
+Object 1 * Object 2 is equal to 5241.066111658418: True
+
+------------------------------------------------------------------------------------------
+Test 9: Testing For Object Division
+------------------------------------------------------------------------------------------
+Object 1 / Object 2 is equal to 0.9679687323367697: True
+
+------------------------------------------------------------------------------------------
+Test 10: Testing For Length (Raw Value) Output
+------------------------------------------------------------------------------------------
+The len() of Object 1 is equal to 123: True
+
+The len() of Object 2 is equal to 281: False
